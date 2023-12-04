@@ -41,14 +41,14 @@
 }
 
 .hero-content {
-  flex: 1.22;
+  flex: 1.19; /* or 1.22 */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
 .hero-content-info {
-  padding: 6.4rem;
+  padding: 4.8rem; /* the original figures, 6.4rem 0 0 6.4rem */
   flex: 1;
   display: flex;
 
@@ -57,21 +57,120 @@
 }
 
 .hero-content-info h1 {
+  margin: 2.8rem 0 0 2.8rem; /* there was no margin property here in the original */
+
   font-size: 8rem;
-  font-weight: 60rem;
+  font-weight: 600;
   font-family: var(--playfair-display);
   color: var(--secondary-color);
 }
 
 .hero-content-info p {
-  margin: 3.2rem 0 0 3.2rem;
+  margin: 2.8rem 0 0 2.8rem; /* the original figures, 3.2rem 0 0 3.2rem */
 
-  font-family: var(--plus-jarkata-sans);
+  font-family: var(--plus-jakarta-sans);
   color: var(--secondary-color);
   font-size: 1.8rem;
   font-weight: 400;
 }
 
 .hero-content__buttons {
-  margin: 4.1rem 0 0 4.1rem;
+  margin: 6.4rem 0 0 6.4rem; /* the original figures, 4.1rem 0 0 4.1rem */
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.6rem;
+}
+
+.hero-content__order-button {
+  padding: 2rem;
+  border-radius: 3.6rem;
+  min-width: 21.2rem;
+  outline: none;
+  border: none;
+  background: var(--secondary-color);
+
+  cursor: pointer;
+
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-family: var(--plus-jakarta-sans);
+}
+
+.hero-content__play-button {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: var(--black-200);
+  font-family: var(--plus-jakarta-sans);
+}
+
+.hero-content__play-button img {
+  margin-right: 1.2rem;
+  width: 4.6rem;
+  height: 4.6rem;
+  object-fit: contain;
+}
+
+.hero-content__testimonial {
+  padding: 3.2rem 6.4rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  background: var(--color-white);
+}
+
+.hero-content__customer {
+  flex: 1;
+  gap: 1rem;
+}
+
+.hero-content__customer h4 {
+  font-size: 6.2rem;
+  font-weight: 400;
+  font-family: var(--playfair-display);
+}
+
+.hero-content__customer p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--secondary-color);
+  opacity: 0.5;
+}
+
+.hero-content__review {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding-left: 2rem;
+  border: 1px solid rgba(2, 2, 2, 0.1);
+  min-width: 20rem;
+}
+
+.hero-content__review img {
+  width: 4.2rem;
+  height: 4.2rem;
+  object-fit: contain;
+}
+
+.hero-content__review p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--secondary-color);
+  opacity: 0.8;
 }
