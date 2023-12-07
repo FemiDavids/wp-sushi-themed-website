@@ -62,4 +62,22 @@
 
 .subscription__form input::placeholder {
   color: rgba(255, 255, 255, 0.5);
+  opacity: 0, 5;
+}
+
+.subscription__form button {
+  padding: 2rem;
+  min-width: 18rem;
+}
+
+.subscription__form button {
+  padding: 2rem;
+
+  min-width: 18rem;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+  text-align: center;
 }
