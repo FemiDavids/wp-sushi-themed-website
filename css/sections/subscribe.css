@@ -80,4 +80,11 @@
   font-family: var(--plus-jakarta-sans);
   color: #fff;
   text-align: center;
+
+  background: var(--black-400);
+  border-radius: 4.6rem;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
 }
