@@ -6,7 +6,7 @@
 @import url("sections/hero.css");
 @import url("sections/about.css");
 @import url("sections/popular.css");
-@import url("sections/trending.css");
+@import url("/css/sections/trending.css");
 @import url("sections/subscribe.css");
 @import url("sections/footer.css");
 
@@ -115,7 +115,7 @@ a {
   scrollbar-width: none; /* Firefox */
 }
 
-/* START: about us media queries 
+/* START: about us media queries */
 @media screen and (max-width: 1024px) {
   .about-us {
     flex-direction: column;
@@ -135,6 +135,7 @@ a {
   }
 }
 
+/*
 @media screen and (max-width: 750px) {
   .about-us__image {
     flex-direction: column;
